@@ -244,10 +244,10 @@ function FAQ() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="/contact#contact-form"
                 className="inline-block bg-primary text-white px-10 py-4 rounded-full font-heading font-bold text-lg hover:bg-purple-800 transition-all duration-300 transform hover:scale-105 shadow-2xl"
               >
-                Contact Us
+                Get Started
               </Link>
               <a
                 href="mailto:support@assistnez.com"

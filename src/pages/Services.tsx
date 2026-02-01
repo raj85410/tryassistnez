@@ -229,7 +229,11 @@ function Services() {
               transition={{ duration: 0.6 }}
               className="mb-20 last:mb-0"
             >
-              <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+              <motion.div
+                className="bg-deep-purple rounded-3xl shadow-2xl overflow-hidden border border-purple-900/50"
+                whileHover={{ y: -4, transition: { duration: 0.25 } }}
+                whileTap={{ scale: 0.995 }}
+              >
                 <div className="bg-gradient-to-r from-primary to-purple-800 text-white p-8 md:p-12">
                   <div className="flex items-center gap-6 mb-4">
                     <div className="text-white">
@@ -245,53 +249,58 @@ function Services() {
                 <div className="p-8 md:p-12">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                     {service.categories.map((category, catIndex) => (
-                      <div key={catIndex} className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-                        <h3 className="text-xl font-heading font-bold mb-4 text-primary">{category.name}</h3>
+                      <motion.div
+                        key={catIndex}
+                        className="bg-deep-purple/80 p-6 rounded-xl border border-purple-800/50 text-white"
+                        whileHover={{ y: -4, scale: 1.01, transition: { duration: 0.2 } }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        <h3 className="text-xl font-heading font-bold mb-4 text-purple-200">{category.name}</h3>
                         <ul className="space-y-2">
                           {category.features.map((feature, featIndex) => (
-                            <li key={featIndex} className="flex items-start text-gray-700 font-body">
-                              <CheckCircle className="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" />
+                            <li key={featIndex} className="flex items-start text-gray-200 font-body">
+                              <CheckCircle className="w-5 h-5 text-purple-300 mr-2 flex-shrink-0 mt-0.5" />
                               <span>{feature}</span>
                             </li>
                           ))}
                         </ul>
-                      </div>
+                      </motion.div>
                     ))}
                   </div>
 
-                  <div className="bg-gradient-to-r from-purple-50 to-gray-50 p-6 rounded-xl mb-6">
-                    <h3 className="text-xl font-heading font-bold mb-3 text-primary flex items-center">
+                  <div className="bg-deep-purple/80 border border-purple-800/50 p-6 rounded-xl mb-6 text-white">
+                    <h3 className="text-xl font-heading font-bold mb-3 text-purple-200 flex items-center">
                       <ArrowRight className="w-6 h-6 mr-2" />
                       Business Impact
                     </h3>
-                    <p className="text-gray-700 font-body text-lg leading-relaxed">{service.businessImpact}</p>
+                    <p className="text-gray-200 font-body text-lg leading-relaxed">{service.businessImpact}</p>
                   </div>
 
-                  <div className="bg-gray-50 p-6 rounded-xl border-2 border-primary">
-                    <h3 className="text-2xl font-heading font-bold mb-4 text-center">Pricing Options</h3>
+                  <div className="bg-deep-purple/80 p-6 rounded-xl border-2 border-primary text-white">
+                    <h3 className="text-2xl font-heading font-bold mb-4 text-center text-white">Pricing Options</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                        <p className="text-gray-600 font-body mb-2">Half-Day Support</p>
-                        <p className="text-4xl font-heading font-bold text-primary mb-2">{service.pricing.halfDay}</p>
-                        <p className="text-sm text-gray-500 font-body">4 hours daily</p>
+                      <div className="bg-deep-purple p-6 rounded-lg border border-purple-800/50 text-center">
+                        <p className="text-gray-300 font-body mb-2">Half-Day Support</p>
+                        <p className="text-4xl font-heading font-bold text-purple-200 mb-2">{service.pricing.halfDay}</p>
+                        <p className="text-sm text-gray-400 font-body">4 hours daily</p>
                       </div>
-                      <div className="bg-white p-6 rounded-lg shadow-md text-center border-2 border-primary">
-                        <p className="text-gray-600 font-body mb-2">Full-Time Support</p>
-                        <p className="text-4xl font-heading font-bold text-primary mb-2">{service.pricing.fullTime}</p>
-                        <p className="text-sm text-gray-500 font-body">8 hours daily</p>
+                      <div className="bg-deep-purple p-6 rounded-lg border-2 border-primary text-center">
+                        <p className="text-gray-300 font-body mb-2">Full-Time Support</p>
+                        <p className="text-4xl font-heading font-bold text-purple-200 mb-2">{service.pricing.fullTime}</p>
+                        <p className="text-sm text-gray-400 font-body">8 hours daily</p>
                       </div>
                     </div>
                     <div className="mt-6 text-center">
                       <Link
-                        to="/contact"
-                        className="inline-block bg-primary text-white px-8 py-3 rounded-full font-heading font-bold hover:bg-purple-800 transition-all duration-300 transform hover:scale-105"
+                        to="/contact#contact-form"
+                        className="inline-block bg-primary text-white px-8 py-3 rounded-full font-heading font-bold hover:bg-purple-700 transition-all duration-300 transform hover:scale-105"
                       >
-                        Get Custom Quote
+                        Get Started
                       </Link>
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>
@@ -312,10 +321,10 @@ function Services() {
               Schedule a free consultation to discuss your specific needs
             </p>
             <Link
-              to="/contact"
+              to="/contact#contact-form"
               className="inline-block bg-primary text-white px-10 py-4 rounded-full font-heading font-bold text-lg hover:bg-purple-800 transition-all duration-300 transform hover:scale-105 shadow-2xl"
             >
-              Contact Us Today
+              Get Started
             </Link>
           </motion.div>
         </div>

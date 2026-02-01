@@ -6,19 +6,16 @@ function Footer() {
 
   const footerLinks = {
     company: [
-      { name: 'About Us', path: '/about' },
-      { name: 'Our Services', path: '/services' },
-      { name: 'Testimonials', path: '/testimonials' },
-      { name: 'Contact', path: '/contact' }
+      { name: 'Home', path: '/' },
+      { name: 'About', path: '/about' },
+      { name: 'Services', path: '/services' },
+      { name: 'FAQ', path: '/faq' },
+      { name: 'Get Started', path: '/contact#contact-form' }
     ],
     services: [
       { name: 'Bookkeeping & Data Management', path: '/services' },
       { name: 'Virtual Assistance', path: '/services' },
       { name: 'Creative Artwork & Design', path: '/services' }
-    ],
-    support: [
-      { name: 'FAQ', path: '/faq' },
-      { name: 'Get Started', path: '/contact' }
     ]
   };
 
@@ -40,7 +37,7 @@ function Footer() {
             <h3 className="font-heading font-bold text-xl mb-6">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
-                <li key={link.path}>
+                <li key={link.path + link.name}>
                   <Link
                     to={link.path}
                     className="font-body text-gray-300 hover:text-white transition-colors inline-block"
@@ -74,8 +71,10 @@ function Footer() {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 flex-shrink-0 mt-1 text-primary" />
                 <span className="font-body text-gray-300">
-                  Johns Place, 45, Michael Rd.<br />
-                  Chatham, Surrey, V4W 1J5
+                  ABS Plaza<br />
+                  Jagatpura 7 Number<br />
+                  Jaipur, Rajasthan<br />
+                  India 302017
                 </span>
               </li>
               <li className="flex items-center">

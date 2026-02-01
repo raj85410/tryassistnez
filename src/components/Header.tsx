@@ -26,8 +26,7 @@ function Header() {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Testimonials', path: '/testimonials' },
-    { name: 'FAQ', path: '/faq' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'FAQ', path: '/faq' }
   ];
 
   return (
@@ -76,7 +75,7 @@ function Header() {
           </nav>
 
           <Link
-            to="/contact"
+            to="/contact#contact-form"
             className="hidden lg:block bg-primary text-white px-6 py-3 rounded-full font-heading font-bold hover:bg-purple-800 transition-all duration-300 transform hover:scale-105"
           >
             Get Started
@@ -129,7 +128,7 @@ function Header() {
                 className="mt-4"
               >
                 <Link
-                  to="/contact"
+                  to="/contact#contact-form"
                   className="block text-center bg-primary text-white px-6 py-3 rounded-full font-heading font-bold hover:bg-purple-800 transition-colors"
                 >
                   Get Started

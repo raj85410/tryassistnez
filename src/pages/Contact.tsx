@@ -2,10 +2,17 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Contact() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  useEffect(() => {
+    if (window.location.hash === '#contact-form') {
+      const el = document.getElementById('contact-form');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, []);
 
   const formik = useFormik({
     initialValues: {
@@ -48,7 +55,7 @@ function Contact() {
     {
       icon: <MapPin className="w-8 h-8" />,
       title: 'Office Address',
-      details: ['Johns Place, 45, Michael Rd.', 'Chatham, Surrey, V4W 1J5']
+      details: ['ABS Plaza', 'Jagatpura 7 Number', 'Jaipur, Rajasthan', 'India 302017']
     },
     {
       icon: <Phone className="w-8 h-8" />,
@@ -138,6 +145,7 @@ function Contact() {
             </motion.div>
 
             <motion.div
+              id="contact-form"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -288,44 +296,6 @@ function Contact() {
               </form>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Find Us</h2>
-            <p className="text-lg font-body text-gray-600">
-              Visit our office or connect with us online
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden"
-          >
-            <div className="aspect-video bg-gray-200 relative">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.0267891467753!2d-0.5334449!3d51.3866768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIzJzEyLjAiTiAwwrAzMicwMC40Ilc!5e0!3m2!1sen!2suk!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0"
-              ></iframe>
-            </div>
-          </motion.div>
         </div>
       </section>
     </div>

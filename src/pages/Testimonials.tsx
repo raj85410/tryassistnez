@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Testimonials() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -243,12 +244,12 @@ function Testimonials() {
             <p className="text-xl font-body mb-8 text-gray-300">
               Experience the same level of service and dedication that our clients rave about
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact#contact-form"
               className="inline-block bg-primary text-white px-10 py-4 rounded-full font-heading font-bold text-lg hover:bg-purple-800 transition-all duration-300 transform hover:scale-105 shadow-2xl"
             >
-              Get Started Today
-            </a>
+              Get Started
+            </Link>
           </motion.div>
         </div>
       </section>

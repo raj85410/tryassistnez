@@ -179,10 +179,10 @@ function Home() {
             transition={{ delay: 1.3, duration: 0.8 }}
           >
             <Link
-              to="/contact"
+              to="/contact#contact-form"
               className="inline-block bg-white text-primary px-10 py-4 rounded-full font-heading font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl"
             >
-              Get Started Today
+              Get Started
             </Link>
           </motion.div>
         </div>
@@ -211,15 +211,16 @@ function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -10, transition: { duration: 0.2 } }}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+                whileHover={{ y: -8, scale: 1.02, transition: { duration: 0.25 } }}
+                whileTap={{ scale: 0.98 }}
+                className="bg-deep-purple p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group border border-purple-900/50"
               >
-                <div className="text-primary mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="text-purple-300 mb-4 transform group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
-                <h3 className="text-2xl font-heading font-bold mb-3">{feature.title}</h3>
-                <p className="text-gray-600 font-body mb-4">{feature.description}</p>
-                <p className="text-sm text-gray-500 font-body">{feature.details}</p>
+                <h3 className="text-2xl font-heading font-bold mb-3 text-white">{feature.title}</h3>
+                <p className="text-gray-200 font-body mb-4">{feature.description}</p>
+                <p className="text-sm text-gray-300 font-body">{feature.details}</p>
               </motion.div>
             ))}
           </div>
@@ -271,28 +272,30 @@ function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                whileHover={{ y: -8, scale: 1.02, transition: { duration: 0.25 } }}
+                whileTap={{ scale: 0.98 }}
+                className="bg-deep-purple p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-purple-900/50"
               >
-                <div className="text-primary mb-6">
+                <div className="text-purple-300 mb-6">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-heading font-bold mb-4">{service.title}</h3>
-                <p className="text-gray-600 font-body mb-6">{service.description}</p>
+                <h3 className="text-2xl font-heading font-bold mb-4 text-white">{service.title}</h3>
+                <p className="text-gray-200 font-body mb-6">{service.description}</p>
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-gray-700 font-body">
-                      <CheckCircle className="w-5 h-5 text-primary mr-2 flex-shrink-0" />
+                    <li key={idx} className="flex items-center text-gray-200 font-body">
+                      <CheckCircle className="w-5 h-5 text-purple-300 mr-2 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <div className="border-t pt-4 mt-auto">
-                  <p className="text-primary font-heading font-bold text-xl mb-4">{service.pricing}</p>
+                <div className="border-t border-purple-800 pt-4 mt-auto">
+                  <p className="text-purple-300 font-heading font-bold text-xl mb-4">{service.pricing}</p>
                   <Link
-                    to="/services"
-                    className="inline-block w-full text-center bg-primary text-white px-6 py-3 rounded-lg font-heading font-semibold hover:bg-purple-800 transition-colors duration-300"
+                    to="/contact#contact-form"
+                    className="inline-block w-full text-center bg-primary text-white px-6 py-3 rounded-lg font-heading font-semibold hover:bg-purple-700 transition-colors duration-300"
                   >
-                    Learn More
+                    Get Started
                   </Link>
                 </div>
               </motion.div>
@@ -408,10 +411,10 @@ function Home() {
               </a>
             </div>
             <Link
-              to="/contact"
+              to="/contact#contact-form"
               className="inline-block bg-primary text-white px-10 py-4 rounded-full font-heading font-bold text-lg hover:bg-purple-800 transition-all duration-300 transform hover:scale-105 shadow-2xl"
             >
-              Schedule a Consultation
+              Get Started
             </Link>
           </motion.div>
         </div>
