@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import BookMeetingButton from './components/BookMeetingButton';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -27,6 +28,7 @@ function App() {
           </Routes>
         </AnimatePresence>
         <Footer />
+        <BookMeetingButton />
       </div>
     </Router>
   );

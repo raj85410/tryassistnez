@@ -250,7 +250,7 @@ function FAQ() {
                 Get Started
               </Link>
               <a
-                href="mailto:support@assistnez.com"
+                href="mailto:info@assistnez.com"
                 className="inline-block bg-white text-primary px-10 py-4 rounded-full font-heading font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl"
               >
                 Email Us

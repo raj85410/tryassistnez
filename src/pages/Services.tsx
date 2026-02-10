@@ -10,60 +10,24 @@ function Services() {
     {
       icon: <BookOpen className="w-16 h-16" />,
       title: 'Bookkeeping & Data Management',
-      subtitle: 'Comprehensive financial and data solutions',
+      subtitle: 'Accurate books and clear cash flow',
       categories: [
         {
-          name: 'Comprehensive Bookkeeping Services',
+          name: 'Bookkeeping',
           features: [
-            'QuickBooks setup and management',
-            'Accounts payable and receivable',
-            'Bank reconciliation',
-            'Financial statement preparation',
-            'Expense tracking and categorization',
-            'Invoice generation and management',
-            'Payroll processing support',
-            'Tax preparation assistance'
-          ]
-        },
-        {
-          name: 'Data Entry & Catalog Management',
-          features: [
-            'Product catalog data entry',
-            'Pricing updates and maintenance',
-            'Inventory tracking and management',
-            'Supplier information management',
-            'Customer database maintenance',
-            'Order history documentation',
-            'SKU and product code organization',
-            'Digital file organization'
-          ]
-        },
-        {
-          name: 'Financial Reporting & Analysis',
-          features: [
-            'Monthly financial reports',
-            'Profit and loss statements',
-            'Cash flow analysis',
-            'Budget preparation and monitoring',
-            'Cost analysis and reduction strategies',
-            'Revenue trend analysis',
-            'Key performance indicator tracking',
-            'Custom report generation'
-          ]
-        },
-        {
-          name: 'Compliance & Record Keeping',
-          features: [
-            'Document digitization and storage',
-            'Compliance documentation',
-            'Audit trail maintenance',
-            'Records retention management',
-            'Financial document organization',
-            'Regulatory compliance support'
+            'Invoice creation and reconciliation',
+            'Accounts receivable & payable tracking',
+            'Purchase order vs invoice matching',
+            'Basic monthly financial reports',
+            'Vendor payment tracking',
+            'Job-level cost tracking (order profitability)',
+            'Sales tax data preparation (non-filing support)',
+            'Cleanup of overdue or mismatched entries'
           ]
         }
       ],
-      businessImpact: 'Streamline your financial operations and gain real-time insights into your business performance. Our bookkeeping services help you make informed decisions while ensuring accuracy and compliance.',
+      businessImpact:
+        'Improves financial clarity and cash-flow control while reducing revenue leakage and owner involvement.',
       pricing: {
         halfDay: '$1,000/month',
         fullTime: '$1,440/month'
@@ -71,61 +35,37 @@ function Services() {
     },
     {
       icon: <Headphones className="w-16 h-16" />,
-      title: 'Virtual Assistance & Back-Office Support',
-      subtitle: 'Complete administrative and operational support',
+      title: 'Order Management & Operations',
+      subtitle: 'Smooth, on-time, profitable orders',
       categories: [
         {
-          name: 'Order Management & Processing',
+          name: 'Order Management',
           features: [
-            'Order entry and tracking',
-            'Customer inquiry handling',
-            'Shipping coordination',
-            'Return and exchange processing',
-            'Order status updates',
-            'Purchase order management',
-            'Vendor communication',
-            'Delivery confirmation tracking'
+            'Sales order and purchase order creation',
+            'Supplier & decorator coordination',
+            'Artwork approval tracking',
+            'Production timeline monitoring',
+            'Rush and deadline-critical order handling',
+            'Shipping coordination (FedEx / UPS)',
+            'Proactive delay escalation',
+            'Delivery confirmation and closure'
           ]
         },
         {
-          name: 'Research & Market Analysis',
+          name: 'Research & Presentation',
           features: [
-            'Competitor analysis',
-            'Market trend research',
-            'Product sourcing and research',
-            'Pricing analysis',
-            'Supplier verification',
-            'Industry news monitoring',
-            'Lead generation research',
-            'Customer feedback analysis'
-          ]
-        },
-        {
-          name: 'Virtual Administrative Support',
-          features: [
-            'Email management and filtering',
-            'Calendar scheduling and coordination',
-            'Meeting preparation and notes',
-            'Document preparation and formatting',
-            'Travel arrangements',
-            'Customer communication',
-            'Data compilation and reporting',
-            'General administrative tasks'
-          ]
-        },
-        {
-          name: 'E-commerce & Platform Management',
-          features: [
-            'Website content updates',
-            'Product listing management',
-            'Online store maintenance',
-            'Platform integration support',
-            'Customer review monitoring',
-            'Digital marketing support'
+            'Product sourcing and alternatives research',
+            'Pricing validation and margin checks',
+            'Client-ready quote creation',
+            'Presentation decks for sales teams',
+            'Timeline and feasibility validation',
+            'Rush order cost vs delivery analysis',
+            'Supplier comparison and recommendations'
           ]
         }
       ],
-      businessImpact: 'Focus on growth while we handle the day-to-day operations. Our virtual assistants seamlessly integrate with your team, providing reliable support that scales with your business needs.',
+      businessImpact:
+        'Ensures orders are delivered on time and profitably by eliminating execution errors and last-minute firefighting. Increases quote accuracy and win rates by aligning pricing, feasibility, and delivery expectations upfront.',
       pricing: {
         halfDay: '$1,000/month',
         fullTime: '$1,440/month'
@@ -133,61 +73,24 @@ function Services() {
     },
     {
       icon: <Palette className="w-16 h-16" />,
-      title: 'Creative Artwork & Design Support',
-      subtitle: 'Professional design services for promotional products',
+      title: 'Artwork & Design Support',
+      subtitle: 'Production-ready artwork from day one',
       categories: [
         {
-          name: 'Artwork & Design Proofing',
+          name: 'Artwork & Design Support',
           features: [
-            'Design file review and quality check',
-            'Color accuracy verification',
-            'File format conversion',
-            'Resolution and sizing verification',
-            'Print-ready file preparation',
-            'Design specification documentation',
-            'Client proof creation',
-            'Artwork version control'
-          ]
-        },
-        {
-          name: 'Mockups & Virtual Samples',
-          features: [
-            '3D product visualization',
-            'Digital mockup creation',
-            'Virtual sample presentation',
-            'Product rendering',
-            'Multi-angle product views',
-            'Branded mockup templates',
-            'Presentation-ready visuals',
-            'Custom mockup development'
-          ]
-        },
-        {
-          name: 'Template & Layout Creation',
-          features: [
-            'Product template design',
-            'Layout standardization',
-            'Brand guideline templates',
-            'Marketing material templates',
-            'Order form design',
-            'Presentation templates',
-            'Social media graphics',
-            'Email signature design'
-          ]
-        },
-        {
-          name: 'Design Support & Consultation',
-          features: [
-            'Design recommendation and guidance',
-            'File troubleshooting',
-            'Design optimization for production',
-            'Color matching assistance',
-            'Typography consultation',
-            'Brand consistency review'
+            'Artwork intake and requirement checks',
+            'Print-ready file coordination',
+            'Imprint method validation (screen print, embroidery, etc.)',
+            'Mockup coordination with designers',
+            'Artwork revision tracking',
+            'Approval management between client & production',
+            'File organization for production readiness'
           ]
         }
       ],
-      businessImpact: 'Deliver professional, production-ready designs consistently. Our creative team ensures every piece of artwork meets industry standards while maintaining your brand identity.',
+      businessImpact:
+        'Reduces production delays and rework by ensuring artwork is production-ready from the start.',
       pricing: {
         halfDay: '$1,200/month',
         fullTime: '$1,440/month'

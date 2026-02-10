@@ -58,14 +58,9 @@ function Contact() {
       details: ['ABS Plaza', 'Jagatpura 7 Number', 'Jaipur, Rajasthan', 'India 302017']
     },
     {
-      icon: <Phone className="w-8 h-8" />,
-      title: 'Phone',
-      details: ['+44 (0)20 1234 5678']
-    },
-    {
       icon: <Mail className="w-8 h-8" />,
       title: 'Email',
-      details: ['support@assistnez.com', 'general.inquiries@assistnez.com']
+      details: ['info@assistnez.com']
     },
     {
       icon: <Clock className="w-8 h-8" />,
@@ -199,7 +194,7 @@ function Contact() {
                         ? 'border-red-500'
                         : 'border-gray-300'
                     }`}
-                    placeholder="john@example.com"
+                    placeholder="info@assistnez.com"
                   />
                   {formik.touched.email && formik.errors.email && (
                     <p className="text-red-500 text-sm mt-1 font-body">{formik.errors.email}</p>

@@ -78,15 +78,9 @@ function Footer() {
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone className="w-5 h-5 mr-3 flex-shrink-0 text-primary" />
-                <a href="tel:+442012345678" className="font-body text-gray-300 hover:text-white transition-colors">
-                  +44 (0)20 1234 5678
-                </a>
-              </li>
-              <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 flex-shrink-0 text-primary" />
-                <a href="mailto:support@assistnez.com" className="font-body text-gray-300 hover:text-white transition-colors">
-                  support@assistnez.com
+                <a href="mailto:info@assistnez.com" className="font-body text-gray-300 hover:text-white transition-colors">
+                  info@assistnez.com
                 </a>
               </li>
             </ul>

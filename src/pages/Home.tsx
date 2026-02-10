@@ -402,12 +402,8 @@ function Home() {
               Get in touch today and discover how Assistnez can elevate your operations
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
-              <a href="mailto:support@assistnez.com" className="text-lg font-body hover:text-primary transition-colors">
-                support@assistnez.com
-              </a>
-              <span className="hidden md:block">|</span>
-              <a href="tel:+442012345678" className="text-lg font-body hover:text-primary transition-colors">
-                +44 (0)20 1234 5678
+              <a href="mailto:info@assistnez.com" className="text-lg font-body hover:text-primary transition-colors">
+                info@assistnez.com
               </a>
             </div>
             <Link

@@ -17,7 +17,7 @@ function Testimonials() {
     {
       name: 'Michael Chen',
       role: 'CEO',
-      company: 'PromoWorks Inc.',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'bookkeeping',
       rating: 5,
       text: 'The level of service and expertise provided by Assistnez is exceptional. They truly understand the promotional products industry and have become an invaluable extension of our team. Their attention to detail and commitment to quality has significantly improved our operations.',
@@ -26,7 +26,7 @@ function Testimonials() {
     {
       name: 'Sarah Martinez',
       role: 'Operations Manager',
-      company: 'BrandMakers Co.',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'virtual-assistance',
       rating: 5,
       text: 'Assistnez has been a game-changer for our business. Their virtual assistants handle our order processing seamlessly, allowing us to focus on growing our client base. The 24/7 support means we never miss an opportunity.',
@@ -35,7 +35,7 @@ function Testimonials() {
     {
       name: 'David Thompson',
       role: 'Owner',
-      company: 'CustomGear Solutions',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'bookkeeping',
       rating: 5,
       text: 'Our bookkeeping was a nightmare before Assistnez. Now everything is organized, timely, and accurate. They saved us thousands in potential errors and helped us identify cost-saving opportunities we never knew existed.',
@@ -44,7 +44,7 @@ function Testimonials() {
     {
       name: 'Jennifer Lee',
       role: 'Creative Director',
-      company: 'PromoBrand Studio',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'creative',
       rating: 5,
       text: 'The design support from Assistnez has elevated our client presentations. Their mockups are professional, their proofing is meticulous, and they always deliver on time. Our clients consistently comment on the quality of our visuals.',
@@ -53,7 +53,7 @@ function Testimonials() {
     {
       name: 'Robert Johnson',
       role: 'Sales Director',
-      company: 'Elite Promotional Products',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'virtual-assistance',
       rating: 5,
       text: 'The research and market analysis provided by Assistnez gives us a competitive edge. They keep us informed about industry trends and competitor activities, helping us make strategic decisions that drive growth.',
@@ -62,7 +62,7 @@ function Testimonials() {
     {
       name: 'Amanda Foster',
       role: 'Founder',
-      company: 'Signature Promotions',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'bookkeeping',
       rating: 5,
       text: 'As a growing business, having reliable financial management is crucial. Assistnez not only keeps our books in order but provides insights that help us plan for the future. Their monthly reports are comprehensive and easy to understand.',
@@ -71,7 +71,7 @@ function Testimonials() {
     {
       name: 'Marcus Williams',
       role: 'VP of Operations',
-      company: 'PromoExpress LLC',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'virtual-assistance',
       rating: 5,
       text: 'The efficiency gains since partnering with Assistnez are remarkable. Order turnaround time has decreased by 40%, and customer satisfaction has increased significantly. They are truly an extension of our team.',
@@ -80,7 +80,7 @@ function Testimonials() {
     {
       name: 'Lisa Anderson',
       role: 'Marketing Manager',
-      company: 'BrandFirst Co.',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'creative',
       rating: 5,
       text: 'Working with Assistnez on our design needs has been fantastic. They understand branding and consistently deliver high-quality mockups that wow our clients. The turnaround time is impressive too.',
@@ -89,7 +89,7 @@ function Testimonials() {
     {
       name: 'James Patterson',
       role: 'Owner',
-      company: 'Quality Promos',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'virtual-assistance',
       rating: 5,
       text: 'The virtual administrative support has freed up so much of my time. I can now focus on sales and strategy while Assistnez handles the administrative tasks flawlessly. Best business decision I made this year.',
@@ -98,7 +98,7 @@ function Testimonials() {
     {
       name: 'Emily Rodriguez',
       role: 'CFO',
-      company: 'Premier Promotional Group',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'bookkeeping',
       rating: 5,
       text: 'Assistnez transformed our financial operations. Their bookkeeping is accurate, timely, and professional. Tax season is no longer stressful, and we have real-time visibility into our financial health.',
@@ -107,7 +107,7 @@ function Testimonials() {
     {
       name: 'Christopher Davis',
       role: 'President',
-      company: 'TopBrand Promotions',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'creative',
       rating: 5,
       text: 'The creative team at Assistnez is outstanding. They handle our artwork proofing with precision and have caught errors that could have been costly. Their attention to detail is unmatched.',
@@ -116,7 +116,7 @@ function Testimonials() {
     {
       name: 'Nicole Brown',
       role: 'Business Owner',
-      company: 'Creative Impressions',
+      company: 'Decorator & Promotional Products Distributor',
       category: 'virtual-assistance',
       rating: 5,
       text: 'Assistnez has become an integral part of our success. From order management to customer communication, they handle everything professionally. Our customers often compliment us on our responsiveness.',
@@ -221,7 +221,6 @@ function Testimonials() {
                   <div>
                     <p className="font-heading font-bold text-lg">{testimonial.name}</p>
                     <p className="text-gray-600 font-body text-sm">{testimonial.role}</p>
-                    <p className="text-gray-500 font-body text-sm">{testimonial.company}</p>
                   </div>
                 </div>
               </motion.div>
